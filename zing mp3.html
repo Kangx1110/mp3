@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="styles_1" href="baibuoi6.css" />
+  <link rel="styles_1" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <title>Zing MP3</title>
+</head>
+<body>
+    <style>
+        .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bo {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .Lop1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+  }
+  .bo:hover .Lop1 {
+    transform: scale(1.2);
+  }
+  .Lop2 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.4s;
+  }
+  .bo:hover .Lop2 {
+    opacity: 1;
+  }
+  .Lop3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  .bo:hover .Lop3 {
+    opacity: 1;
+  }
+  .Lop3 i {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+  }
+  h2 {
+    color: #fff;
+  }
+  body {
+    background-color: #1e1e2e;
+    font-family: Arial, sans-serif;
+  }
+  .br {
+    color: rgba(rgba(226, 223, 223, 0.818), green, blue, alpha)
+  }
+    </style>
+    <h2>ALBUM HOT</h2>
+<div class="item">
+    <div class="container">
+        <div class="bo">
+            <img src="https://i.pinimg.com/736x/ac/80/87/ac8087d2493eefba64d901caf45ca574.jpg" alt="Sự nghiệp Chướng" class="Lop1" />
+            <div class="Lop2"></div>
+            <div class="Lop3">
+            <i class="fa-solid fa-play-circle" aria-hidden="true"></i>
+            <i class="fa-regular fa-heart" aria-hidden="true"></i></div>
+        </div>
+    </div>
+    <p class="caption">
+        <b>Sự Nghiệp Chướng</b><br />Pháo
+    </p>
+</div>
+
+<div class="item">
+    <div class="bo">
+      <img src="https://i.pinimg.com/736x/2b/1f/20/2b1f2046fc975309e626f81cae9f78dc.jpg" alt="" class="Lop1" />
+      <div class="Lop2"></div>
+      <div class="Lop3">
+        <i class="fa-solid fa-play-circle" aria-hidden="true"></i>
+        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+      </div>
+    </div>
+    <p class="caption">
+        <b>Shotta Flow</b><br />NLE Choppa
+    </p>
+</div>
+
+<div class="item">
+    <div class="bo">
+      <img src="https://i.pinimg.com/736x/12/3d/d0/123dd076c913968229e521459be6512f.jpg" alt="" class="Lop1" />
+      <div class="Lop2"></div>
+      <div class="Lop3">
+        <i class="fa-solid fa-play-circle" aria-hidden="true"></i>
+        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+      </div>
+    </div>
+    <p class="caption">
+        <b>Took Her To The O</b><br />King Von
+    </p>
+  </div>
+</body>
+</html>
